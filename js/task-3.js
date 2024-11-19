@@ -1,8 +1,9 @@
-function getElementWidth (content, padding, border){
-    const totalWidth = (Number.parseFloat(content) + Number.parseFloat(padding)*2 + Number.parseFloat(border)*2)
-    return totalWidth;
+function chechForSpam (message){
+   const  lowerCaseMessage = message.toLowerCase();
+   if (lowerCaseMessage.includes(sale) || lowerCaseMessage.includes(spam)){
+    return true;
+   }
+   else{
+    return false;
+   }
 }
-
-console.log(getElementWidth("50px", "8px", "4px")); // 74
-console.log(getElementWidth("60px", "12px", "8.5px")); // 101
-console.log(getElementWidth("200px", "0px", "0px")); // 200
