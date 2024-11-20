@@ -1,9 +1,7 @@
-function formatgMessage (message, maxLenght){
+function formatgMessage (message, maxLength){
 
-    const maxLenght = message.lenght;
-
-    if (maxLenght <= message.lenght ) {
-    return message.slice(0, maxLenght)+"...";
+    if (maxLength <= message.length ) {
+    return message.slice(0, maxLength)+"...";
 }
     else {
     return message;
