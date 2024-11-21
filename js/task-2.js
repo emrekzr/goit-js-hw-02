@@ -1,4 +1,4 @@
-function formatgMessage (message, maxLength){
+function formatMessage (message, maxLength){
 
     if (maxLength <= message.length ) {
     return message.slice(0, maxLength)+"...";
